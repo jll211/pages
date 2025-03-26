@@ -1,5 +1,34 @@
-theme: jekyll-theme-minimal
-title: GitHub Pages Demo
-description: Eine einfache GitHub Pages Demo-Website
-baseurl: /github-pages-setup
+title: Persona Engineering System
+description: Ein modernes React-basiertes Jekyll-Theme
+baseurl: /pages
 url: https://jll211.github.io
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Jekyll settings
+permalink: pretty
+sass:
+  style: compressed
+
+# Content settings
+include:
+  - _pages
+
+# Site author
+author:
+  name: jll211
+  
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - "*.tsx"
